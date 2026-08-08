@@ -1,0 +1,527 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<meta name="generator" content="WYSIWYG Web Builder 20 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="fontawesome6.min.css" rel="stylesheet">
+<link href="Church_Website_Responsive_Adjusted_3.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="wb.overlay.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wb.parallax.min.js"></script>
+<link rel="stylesheet" href="galleria/theme/galleria.classic.min.css">
+<script src="galleria/galleria-1.5.4.min.js"></script>
+<script src="galleria/theme/galleria.classic.min.js"></script>
+<script src="wwb20.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#wb_Image10').addClass('visibility-hidden');
+   $('#Image11').addClass('visibility-hidden');
+   $('#Image5').addClass('visibility-hidden');
+   $('#Image6').addClass('visibility-hidden');
+   $('#OverlayMenu1-overlay').overlay({hideTransition:true});
+   $('#OverlayMenu1').on('click', function(e)
+   {
+      $.overlay.toggle($('#OverlayMenu1-overlay'));
+      return false;
+   });
+   function onScrollLayoutGrid11()
+   {
+      var $obj = $("#wb_LayoutGrid11");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         ShowObjectWithEffect('wb_LayoutGrid_Second_Menu_Layer', 0, 'fade', 1);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         ShowObjectWithEffect('wb_LayoutGrid_Second_Menu_Layer', 1, 'slideup', 500);
+      }
+   }
+   if (!$('#wb_LayoutGrid11').inViewPort(true))
+   {
+      $('#wb_LayoutGrid11').addClass("in-viewport");
+   }
+   onScrollLayoutGrid11();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid11();
+   });
+   $('#wb_LayoutGrid2').parallax();
+   $('#wb_LayoutGrid6').parallax();
+   $('#wb_LayoutGrid7').parallax();
+   $('#wb_LayoutGrid14').parallax();
+   $("a[href*='#Bookmark1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark1').offset().top }, 600, 'linear');
+   });
+   function onScrollBookmark1()
+   {
+      var $obj = $("#wb_Bookmark1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image10', 'animate-fade-in-left', 0, 700);
+         AnimateCss('Image11', 'animate-fade-in-right', 0, 800);
+      }
+   }
+   onScrollBookmark1();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark1();
+   });
+   $("a[href*='#Bookmark2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark2').offset().top }, 600, 'linear');
+   });
+   function onScrollBookmark2()
+   {
+      var $obj = $("#wb_Bookmark2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Image5', 'animate-fade-in-left', 0, 700);
+         AnimateCss('Image6', 'animate-fade-in-right', 0, 800);
+      }
+   }
+   onScrollBookmark2();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark2();
+   });
+   $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
+   $('#wb_PhotoGallery1 img').attr('title', '');$('#wb_PhotoGallery1').galleria({height:1.12});
+});
+</script>
+</head>
+<body>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Image3">
+<img src="images/Mount ZIon Logo.png" id="Image3" alt="" width="205" height="209">
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_Image2">
+<img src="images/Logo TEXT 333.png" id="Image2" alt="" width="596" height="137">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid11">
+<div id="LayoutGrid11">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_ResponsiveMenu1">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">Menu<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li role="menuitem"><a href="./index.html" class="nav-link"><i class="fa fa-home"></i><br>Home</a></li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-0" class="toggle"><i class="fa fa-user"></i>About&nbsp;Us<span class="arrow-down"></span></label>
+<a href="./About-Us.html" class="nav-link"><i class="fa fa-user"></i><br>About&nbsp;Us<span class="arrow-down"></span></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-0">
+<ul role="menu">
+<li role="menuitem"><a href="./About-Us.html" class="nav-link">About&nbsp;Us</a></li>
+<li role="menuitem"><a href="./Testimonies.html" class="nav-link">Testimonies</a></li>
+</ul>
+</li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-1" class="toggle"><i class="fa fa-brands fa-medapps"></i>Events<span class="arrow-down"></span></label>
+<a href="./Events.html" class="nav-link"><i class="fa fa-brands fa-medapps"></i><br>Events<span class="arrow-down"></span></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-1">
+<ul role="menu">
+<li role="menuitem"><a href="./Events.html" class="nav-link">Events</a></li>
+<li role="menuitem"><a href="./Video-Events.html" class="nav-link">Live&nbsp;Events</a></li>
+<li role="menuitem"><a href="./Previous-Events.html" class="nav-link">Previous&nbsp;Events</a></li>
+<li role="menuitem"><a href="./Daily-Nuggets.html" class="nav-link">Daily&nbsp;Nuggets</a></li>
+</ul>
+</li>
+<li role="menuitem"><a href="./Gallery.html" class="nav-link"><i class="fa fa-images"></i><br>Gallery</a></li>
+<li role="menuitem"><a href="./Contact-Us.html" class="nav-link"><i class="fa fa-phone-volume"></i><br>Contact&nbsp;Us</a></li>
+<li role="menuitem"><a href="./Giving.html" class="nav-link"><i class="fa fa-person-chalkboard"></i><br>Giving</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid_Second_Menu_Layer">
+<div id="LayoutGrid_Second_Menu_Layer">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_ResponsiveMenu3">
+<label class="toggle" for="ResponsiveMenu3-submenu" id="ResponsiveMenu3-title">Menu<span id="ResponsiveMenu3-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu3-submenu">
+<ul class="ResponsiveMenu3" id="ResponsiveMenu3" role="menu">
+<li role="menuitem"><a href="./index.html" class="nav-link"><i class="fa fa-home"></i><br>Home</a></li>
+<li role="menuitem">
+<label for="ResponsiveMenu3-submenu-0" class="toggle"><i class="fa fa-user"></i>About&nbsp;Us<span class="arrow-down"></span></label>
+<a href="./About-Us.html" class="nav-link"><i class="fa fa-user"></i><br>About&nbsp;Us<span class="arrow-down"></span></a>
+<input type="checkbox" id="ResponsiveMenu3-submenu-0">
+<ul role="menu">
+<li role="menuitem"><a href="./About-Us.html" class="nav-link">About&nbsp;Us</a></li>
+<li role="menuitem"><a href="./Testimonies.html" class="nav-link">Testimonies</a></li>
+</ul>
+</li>
+<li role="menuitem">
+<label for="ResponsiveMenu3-submenu-1" class="toggle"><i class="fa fa-brands fa-medapps"></i>Events<span class="arrow-down"></span></label>
+<a href="./Events.html" class="nav-link"><i class="fa fa-brands fa-medapps"></i><br>Events<span class="arrow-down"></span></a>
+<input type="checkbox" id="ResponsiveMenu3-submenu-1">
+<ul role="menu">
+<li role="menuitem"><a href="./Events.html" class="nav-link">Events</a></li>
+<li role="menuitem"><a href="./Video-Events.html" class="nav-link">Live&nbsp;Events</a></li>
+<li role="menuitem"><a href="./Previous-Events.html" class="nav-link">Previous&nbsp;Events</a></li>
+<li role="menuitem"><a href="./Daily-Nuggets.html" class="nav-link">Daily&nbsp;Nuggets</a></li>
+</ul>
+</li>
+<li role="menuitem"><a href="./Gallery.html" class="nav-link"><i class="fa fa-images"></i><br>Gallery</a></li>
+<li role="menuitem"><a href="./Contact-Us.html" class="nav-link"><i class="fa fa-phone-volume"></i><br>Contact&nbsp;Us</a></li>
+<li role="menuitem"><a href="./Giving.html" class="nav-link"><i class="fa fa-person-chalkboard"></i><br>Giving</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="FlexContainer1">
+<div id="wb_Image1">
+<img src="images/Mount ZIon Logo.png" id="Image1" alt="" width="46" height="47">
+</div>
+<div id="wb_Image4">
+<img src="images/Logo TEXT 333.png" id="Image4" alt="" width="153" height="35">
+</div>
+<div id="wb_Text1">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><br><br></span>
+</div>
+<div id="wb_OverlayMenu1">
+<a href="#" id="OverlayMenu1">
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+</a>
+
+</div>
+</div>
+<div id="wb_Text20">
+&nbsp;</div>
+
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image12">
+<img src="images/Website Intro.gif" id="Image12" alt="" width="964" height="542">
+</div>
+<div id="wb_Text15">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><br></span>
+</div>
+<div id="wb_Shape1">
+<a href="./About-Us.html"><img src="images/img0001.png" id="Shape1" alt="" width="201" height="74"></a>
+</div>
+<div id="wb_Text2">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><br></span>
+</div>
+<div id="wb_Text3">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6-overlay"></div>
+<div id="LayoutGrid6">
+<div class="row">
+<div class="col-1">
+<div id="wb_Shape3">
+<a href="./Video-Events.html"><img src="images/img0002.png" id="Shape3" alt="" width="204" height="74"></a>
+</div>
+<div id="wb_Text5">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><br></span>
+</div>
+<div id="wb_Text7">
+<span style="color:#008029;font-family:'Arial Black';font-size:19px;">COME FELLOWSHIP WITH US </span>
+</div>
+<div id="wb_Text4">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><br></span>
+</div>
+<div id="wb_Image13">
+<img src="images/Church Activities Image Update.png" id="Image13" alt="" width="994" height="590">
+</div>
+<div id="wb_Text19">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><br></span>
+</div>
+<!-- WEEKLY PRAYERS! -->
+<div id="Html1">
+<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1045999818396028%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></div>
+<div id="wb_Text18">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid15">
+<div id="LayoutGrid15">
+<div class="row">
+<div class="col-1">
+<div id="wb_Bookmark2">
+<div id="Bookmark2"></div>
+
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text14">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><br><br><br></span>
+</div>
+<div id="wb_Image14">
+<img src="images/22jp9pdwg2.jpg" id="Image14" alt="" width="301" height="367">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image7">
+<img src="images/MZFM Text.png" id="Image7" alt="" width="632" height="72">
+</div>
+<div id="wb_Image15">
+<img src="images/ABBBB.png" id="Image15" alt="" width="632" height="375">
+</div>
+<div id="wb_Shape2">
+<a href="./About-Us.html" target="_blank"><img src="images/img0003.png" id="Shape2" alt="" width="201" height="74"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text12">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid13">
+<div id="LayoutGrid13">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text11">
+<span style="color:#005414;font-family:Arial;font-size:32px;"><strong><br></strong></span><span style="color:#005414;font-family:'Arial Black';font-size:32px;"><strong>UPCOMING EVENTS</strong></span><span style="color:#005414;font-family:Arial;font-size:32px;"><strong><br></strong></span>
+</div>
+<div id="wb_Bookmark1">
+<div id="Bookmark1"></div>
+
+</div>
+<div id="wb_LayoutGrid12">
+<div id="LayoutGrid12">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text10">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><br></span>
+</div>
+<div id="wb_Image10">
+<img src="images/No Retreat No Surrender Program.png" id="Image10" alt="" width="467" height="263">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text9">
+&nbsp;
+</div>
+<div id="wb_Text17">
+<span style="color:#000000;font-family:Arial;font-size:15px;line-height:21px;">There going to be a 3 day deliverance and total experience program, commencing on Friday, the 28th of August, to run till Sunday the 30th of August 2026. The theme of this program is “NO RETREAT, NO SURRENDER”. And the time is 7AM on Friday and Saturday, and 8AM on Sunday which will be rounded off with an anointing session for restoration and recovery. In this program, by the divine... <br> <br></span>
+</div>
+<div id="wb_Shape4">
+<a href="./Events.html" target="_blank"><img src="images/img0004.png" id="Shape4" alt="" width="201" height="74"></a>
+</div>
+<div id="wb_Text8">
+&nbsp;
+</div>
+<div id="wb_Text6">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><br><br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid16">
+<div id="LayoutGrid16">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text16">
+&nbsp;
+</div>
+<div id="wb_Text21">
+&nbsp;
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid14">
+<div id="LayoutGrid14">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text13">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image8">
+<img src="images/20TH Anni Text Head.png" id="Image8" alt="" width="994" height="138">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid9">
+<div id="LayoutGrid9">
+<div class="row">
+<div class="col-1">
+<div id="wb_PhotoGallery1">
+<div id="PhotoGallery1">
+<div class="thumbnails">
+<div class="thumbnail">
+<a href="images/DSC_1077.JPG" data-rel=""><img alt="" src="images/DSC_1077.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="thumbnail">
+<a href="images/DSC_0017.JPG" data-rel=""><img alt="" src="images/DSC_0017.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="thumbnail">
+<a href="images/DSC_0024.JPG" data-rel=""><img alt="" src="images/DSC_0024.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="clearfix visible-col3"></div>
+<div class="thumbnail">
+<a href="images/DSC_0029.JPG" data-rel=""><img alt="" src="images/DSC_0029.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="thumbnail">
+<a href="images/DSC_0033.JPG" data-rel=""><img alt="" src="images/DSC_0033.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="thumbnail">
+<a href="images/DSC_0052.JPG" data-rel=""><img alt="" src="images/DSC_0052.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="clearfix visible-col3"></div>
+<div class="thumbnail">
+<a href="images/DSC_0069.JPG" data-rel=""><img alt="" src="images/DSC_0069.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="thumbnail">
+<a href="images/DSC_0339.JPG" data-rel=""><img alt="" src="images/DSC_0339.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="thumbnail">
+<a href="images/DSC_0539.JPG" data-rel=""><img alt="" src="images/DSC_0539.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="clearfix visible-col3"></div>
+<div class="thumbnail">
+<a href="images/DSC_0764.JPG" data-rel=""><img alt="" src="images/DSC_0764.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="thumbnail">
+<a href="images/DSC_0992.JPG" data-rel=""><img alt="" src="images/DSC_0992.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="thumbnail">
+<a href="images/DSC_1016.JPG" data-rel=""><img alt="" src="images/DSC_1016.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="clearfix visible-col3"></div>
+<div class="thumbnail">
+<a href="images/DSC_1054.JPG" data-rel=""><img alt="" src="images/DSC_1054.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="thumbnail">
+<a href="images/DSC_1071.JPG" data-rel=""><img alt="" src="images/DSC_1071.JPG" class="image" width="325" height="217"></a>
+</div>
+<div class="clearfix visible-col3"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid10">
+<div id="LayoutGrid10">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image9">
+<img src="images/copyright.png" id="Image9" alt="" width="940" height="77">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="OverlayMenu1-overlay">
+<div class="OverlayMenu1">
+<ul class="drilldown-menu" role="menu">
+<li><a role="menuitem" href="./index.html" class="OverlayMenu1-effect">Home</a></li>
+<li><a role="menuitem" href="./About-Us.html" class="OverlayMenu1-effect">About&nbsp;Us</a></li>
+<li><a role="menuitem" href="./Events.html" class="OverlayMenu1-effect">Events</a></li>
+<li><a role="menuitem" href="./Video-Events.html" title="Live Events" class="OverlayMenu1-effect">Live&nbsp;Events</a></li>
+<li><a role="menuitem" href="./Previous-Events.html" class="OverlayMenu1-effect">Previous&nbsp;Events</a></li>
+<li><a role="menuitem" href="./Daily-Nuggets.html" title="Daily Nuggets" class="OverlayMenu1-effect">Daily&nbsp;Nuggets</a></li>
+<li><a role="menuitem" href="./Gallery.html" class="OverlayMenu1-effect">Gallery</a></li>
+<li><a role="menuitem" href="./Contact-Us.html" class="OverlayMenu1-effect">Contact&nbsp;Us</a></li>
+<li><a role="menuitem" href="./Giving.html" class="OverlayMenu1-effect">Giving</a></li>
+   </ul>
+</div>
+<a class="close-button" id="OverlayMenu1-close" href="#" role="button" aria-hidden="true"><span></span></a>
+</div>
+</body>
+</html>
